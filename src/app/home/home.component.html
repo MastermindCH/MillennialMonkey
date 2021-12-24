@@ -1,0 +1,61 @@
+<div class="H-container">
+  <div class="H-header">
+    <mat-toolbar class="H-toolbar">
+      <!-- <span>Millennial Monkey</span> -->
+    </mat-toolbar>
+  </div>
+  
+  <div class="H-body">
+    <mat-card class="H-card">
+      <div class="H-card-header">
+        <mat-card-header>
+          <mat-card-title>Random Stock Generator</mat-card-title>
+          <mat-card-subtitle>Pick number of stocks you want from each category</mat-card-subtitle>
+        </mat-card-header>
+      </div>
+      
+      <div class="H-card-content">
+        <mat-card-content>
+          <div class="row">
+            <div class="column">
+              <p>Large Capitalization</p>
+              <mat-slider thumbLabel [(ngModel)]="largeCap" tickInterval="5" step="1" min="0" max="30"></mat-slider>
+            </div>
+            <div class="column">
+              <p>Mid Capitalization</p>
+              <mat-slider thumbLabel [(ngModel)]="midCap" tickInterval="5" step="1" min="0" max="30"></mat-slider>
+            </div>
+            <div class="column">
+              <p>Small Capitalization</p>
+              <mat-slider thumbLabel [(ngModel)]="smCap" tickInterval="5" step="1" min="0" max="30"></mat-slider>
+            </div>
+          </div>
+        </mat-card-content>
+      </div>
+
+      <div class="parent">
+        <ul class="no-bullets">
+          <li *ngFor="let stock of generatedList">{{stock}}</li>
+        </ul>
+      </div>
+
+      <div class="H-card-action">
+        <mat-card-actions>
+          <button class="H-button" mat-raised-button color="primary" (click)="generate()">Generate</button>
+        </mat-card-actions>
+      </div>
+      
+    </mat-card>
+  </div>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="H-footer">
+    <footer>
+      <div class="copyright">
+        <a href="https://www.youtube.com/watch?v=hGeEXrR84XE&ab_channel=DylanLocke" class="fa fa-youtube"></a>
+       <p>© 2069 Monkey. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </div>
+</div>

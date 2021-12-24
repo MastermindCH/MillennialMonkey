@@ -1,0 +1,111 @@
+.H-card {
+    background: rgb(207, 252, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .H-card-header{
+    margin-top: 10%;
+} */
+
+.H-card-content {
+    text-align: center;
+    margin-top: 5%;
+}
+
+.H-card-action {
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* .H-toolbar {
+    background-color: lightgreen;
+} */
+
+.H-button {
+    width: 50%;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        width: 100%;
+    }
+}
+
+mat-slider {
+    width: 50%;
+}
+
+.parent {
+    margin-top: 5%;
+    text-align: center;
+}
+.parent > ul {
+    display: inline-block;
+}
+.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mat-toolbar {
+    background: url('../../assets/BGpic3.PNG') no-repeat center;
+    background-size: cover;
+}
+
+
+.H-container {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 16px);
+    background: rgb(168, 227, 255);
+}
+.H-header {
+    flex-grow: 1;
+    display: block
+}
+.H-body {
+    width:  100%;
+    flex-grow: 1;
+    display: block
+}
+.H-footer {
+    background-color: rgb(109, 109, 148);
+    flex-grow: 1;
+    display: block
+}
+
+.copyright {
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
